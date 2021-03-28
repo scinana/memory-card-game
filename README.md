@@ -8,22 +8,25 @@ In the following days I aim to keep changing the original game to personalise it
 * Allow for all the cards to remain visible once the user completes the game (current behaviour is that an "Outcome" pop up will appear while the cards rotate in the background)
 * Website layout (eg. background colour)
 
+### Play 
+
+Either clone the project or [play online](https://scinana.github.io/memory-card-game/)
+
+# Attribution
+* Original repository for the Memory Game: https://github.com/saelsa/memory-card-game
+* Images used in the current version: Images from Peru
+  * Rainbow Mountain by Michaelbrawn, modified image. Original image available [here](https://en.wikipedia.org/wiki/Vinicunca#/media/File:Rainbow_Mountain_Peru.jpg). Licence: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0)
+  *  
 
 
-## Info from the original README:
+## Other info from the original README:
 
 ### Memory Card Game
 
-Classic memory card game with eight pairs to match. All cards have a spring theme.
+Classic memory card game with eight pairs to match.
 
 ### How it works
 
 Click on two cards, when they match they will stay visible. Otherwise they will turn around and you can try again. The game is over when all pairs are found. Stats will tell you how good you were. Isn't that motivating?
-
-### Play 
-
-Either download the project or [play online](https://scinana.github.io/memory-card-game/)
-
-Ready, steady, go!
 
 
