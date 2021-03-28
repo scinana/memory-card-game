@@ -10,17 +10,17 @@ In the following days I aim to keep changing the original game to personalise it
 
 
 
-# Info from the original README:
+## Info from the original README:
 
-## Memory Card Game
+### Memory Card Game
 
 Classic memory card game with eight pairs to match. All cards have a spring theme.
 
-## How it works
+### How it works
 
 Click on two cards, when they match they will stay visible. Otherwise they will turn around and you can try again. The game is over when all pairs are found. Stats will tell you how good you were. Isn't that motivating?
 
-## Play 
+### Play 
 
 Either download the project or [play online](https://scinana.github.io/memory-card-game/)
 
