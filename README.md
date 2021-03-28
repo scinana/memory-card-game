@@ -37,7 +37,7 @@ Image obtained from [here](https://commons.wikimedia.org/wiki/File:Llanganuco_an
 Original image available [here](https://www.flickr.com/photos/91757435@N00/4165055562/)
 Licence: [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/)
   
-Huacachina and surrounding dunes. 
+* Huacachina and surrounding dunes. 
 By: Ingo Mehling - Own work. 
 Modified image
 Image obtained from [here](https://en.wikipedia.org/wiki/Huacachina#/media/File:Huacachina_Dunes.jpg)
