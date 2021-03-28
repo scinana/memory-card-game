@@ -13,9 +13,10 @@ In the following days I aim to keep changing the original game to personalise it
 Either clone the project or [play online](https://scinana.github.io/memory-card-game/)
 
 # Attribution
-* Original repository for the Memory Game: https://github.com/saelsa/memory-card-game
-* Images used in the current version: Images from Peru
-Rainbow Mountain by Michaelbrawn, modified image. 
+1. Original repository for the Memory Game: https://github.com/saelsa/memory-card-game
+1. Images used in the current version: Images from Peru
+
+  1. Rainbow Mountain by Michaelbrawn, modified image. 
 Image obtained from [here](https://en.wikipedia.org/wiki/Vinicunca#/media/File:Rainbow_Mountain_Peru.jpg)
 Licence: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0)
 
