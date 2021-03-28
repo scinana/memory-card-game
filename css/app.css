@@ -35,7 +35,7 @@ html {
 
 h1 {
     font-family: 'Amatic SC', cursive;
-    font-size: 200%;
+    font-size: 120%;
     padding: 20px;
 }
 
@@ -204,7 +204,7 @@ ul.stats li {
 }
 
 .front {
-    background-color: #ff4d4d;
+    background-color: #ffb3b3;
 
 }
 
