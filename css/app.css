@@ -224,7 +224,7 @@ ul.stats li {
 /* Card Backgrounds */
 
 [data-card-type="A"] .back {
-    background: #f5f5f5 url('../img/001-watering-can.svg');
+    background: #f5f5f5 url('../img/square1.jpg');
 }
 
 [data-card-type="B"] .back {
