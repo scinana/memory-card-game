@@ -88,7 +88,7 @@ footer::after {
 
 header {
     margin: auto;
-    background: #ffff92;
+    background: #ffc994;
     -webkit-box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
 
@@ -204,7 +204,7 @@ ul.stats li {
 }
 
 .front {
-    background-color: #85c3b4;
+    background-color: #ff4d4d;
 
 }
 
