@@ -4,7 +4,7 @@ $(function () {
     const memoryBoard = $('#memory-game');
 
     //array that holds the values for the memory cards
-    let cardArray = ['A', 'A', 'B', 'B', 'C', 'C', 'D', 'D', 'E', 'E', 'F', 'F', 'G', 'G', 'H', 'H'];
+    let cardArray = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2', 'D1', 'D2', 'E1', 'E2', 'F1', 'F2', 'G1', 'G2', 'H1', 'H2'];
     let comparisonArray = [];
 
     //
@@ -27,9 +27,6 @@ $(function () {
 
     //on page load
     createBoard();
-
-
-
 
 
 
@@ -62,7 +59,10 @@ $(function () {
 
         //open the card and store the card information in an array
 
-        comparisonArray.push($(this).data("card-type"));
+        //comparisonArray.push($(this).data("card-type"));   original line
+		cardTypeFirstChar=($(this).data("card-type")).charAt(0)
+		comparisonArray.push(cardTypeFirstChar);
+		
 
         //if this is the first card clicked simply count the click and number of attempts
 
@@ -75,16 +75,19 @@ $(function () {
 
             //if this is the second card clicked compare whether it is the same as the other stored card. If yes, add to the number of pairs and change the css attribute to permanently leave the card open.
 
-            if (comparisonArray[0] === comparisonArray[1]) {
+            if (comparisonArray[0] === comparisonArray[1])
+			
+				
+			{//this can be written as a for loop to add the 1 and 2 to the 1st and 3rd rows
 
-
-                $("[data-card-type=" + comparisonArray[0] + "]").removeClass('flipped').addClass('solved');
-
-                $("[data-card-type=" + comparisonArray[0] + "]").parent().addClass('animated pulse');
+                $("[data-card-type=" + comparisonArray[0] + "1]").removeClass('flipped').addClass('solved');
+				$("[data-card-type=" + comparisonArray[1] + "2]").removeClass('flipped').addClass('solved');
+                $("[data-card-type=" + comparisonArray[0] + "1]").parent().addClass('animated pulse');
+                $("[data-card-type=" + comparisonArray[1] + "2]").parent().addClass('animated pulse');
 
                 pairs++;
 
-                if (pairs === 8) {
+                if (pairs === 2) {
                     gameOver();
                 }
             };
@@ -95,7 +98,7 @@ $(function () {
                 flipCard($('.flipped'));
                 comparisonArray = [];
 
-            }, 1000);
+            }, 500);
 
             //reset the click count
 
@@ -142,8 +145,10 @@ $(function () {
         cardArray = shuffle(cardArray);
 
         for (i = 1; i <= cardArray.length; i++) {
-            memoryBoard.append($(`<div class='container'><div class='card' data-card-type='${cardArray[i-1]}'><figure class='front'></figure><figure class='back'></figure></div></div>'`));
-        }
+			
+				memoryBoard.append($(`<div class='container'><div class='card' data-card-type='${cardArray[i-1]}'><figure class='front'></figure><figure class='back'></figure></div></div>'`));
+					
+		}
     };
 
 
@@ -151,7 +156,7 @@ $(function () {
     function gameOver() {
         stopWatch();
 
-        $('.container').addClass('animated infinite rotateIn');
+        $('.container').addClass('animated rotateIn');
 
         messageWinning();
     }
@@ -159,9 +164,11 @@ $(function () {
     //function for the popup message on winning
     function messageWinning() {
 
-        $(`<section class="game-over"><div class="message-box"><h2>Yay! You have found all pairs!</h2><p>Number of attempts: ${attempts}</p><p>Time required: ${showMinutes}:${showSeconds} </p><p>Level: ${stars} </p><p><i class="fas fa-undo"></i></p></div></section>`).insertAfter($('.game'));
+        $(`<section class="game-over"><div class="message-box" > <h2>Yay! You have found all pairs!</h2><p>Number of attempts: ${attempts}</p><p>Time required: ${showMinutes}:${showSeconds} </p><p>Level: ${stars} </p><p><i class="fas fa-undo"></i></p></section>`).insertAfter($('.game'));
 
-        $('.message-box').fadeIn(1000);
+        $('.message-box').fadeIn(1);
+	
+
 
     }
 

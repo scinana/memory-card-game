@@ -91,8 +91,6 @@ header {
     background: #ffc994;
     -webkit-box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
-
-
 }
 
 
@@ -114,7 +112,8 @@ SPECIFIC SETTINGS
 .................................*/
 
 .game {
-    max-width: 550px;
+	min-width:500px;
+    max-width: 660px;
     margin: auto;
 }
 
@@ -150,11 +149,12 @@ ul.stats li {
 
 .container {
     display: inline-block;
-    width: 23%;
+    width: 20%;
     margin: 1%;
     position: relative;
     -webkit-perspective: 800px;
     perspective: 800px;
+	
 }
 
 .container::before {
@@ -163,6 +163,9 @@ ul.stats li {
     padding-top: 100%;
 }
 
+.withDescription{
+	
+}
 
 
 /*card flip effect, credit to https://desandro.github.io/3dtransforms/docs/card-flip.html */
@@ -185,14 +188,15 @@ ul.stats li {
 }
 
 .card figure {
+	min-width: 100%;
     margin: 0;
     display: block;
     position: absolute;
     width: 100%;
-    height: 100%;
+	height: 100%;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    border-radius: 10px 5px;
+    border-radius: 5px 5px;
     -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
@@ -201,6 +205,8 @@ ul.stats li {
     -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     cursor: pointer;
+	background-color: yellow;
+	opacity: 0.5;
 }
 
 .front {
@@ -208,51 +214,96 @@ ul.stats li {
 
 }
 
-.back {
+/* .back {
     -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg);
+	background-color: #24d6aa;
 
 }
+*/
+.card.flipped {
+    /*-webkit-transform: rotateY( 180deg);
+    transform: rotateY( 180deg);*/
+	cursor: pointer;
+	border: 3px solid #4c5956;
+	border-radius: 10px;
+} 
 
-.card.flipped,
 .card.solved {
-    -webkit-transform: rotateY( 180deg);
-    transform: rotateY( 180deg);
+    /* -webkit-transform: rotateY( 180deg);*/
+    /*transform: rotateY( 180deg); */
+	/*adding border to card when solved*/
+	border-radius: 10px;
+	border: 6px solid #81e02d;
 }
 
 
-/* Card Backgrounds */
+/* Card Backgrounds */ 
 
-[data-card-type="A"] .back {
-    background: #f5f5f5 url('../img/image1.jpg');
+[data-card-type="A1"] .front {
+    background: #f5f5f5 url('img1.jpg');
 }
 
-[data-card-type="B"] .back {
-    background: #f5f5f5 url('../img/image2.jpg');
+/*testing adding front instead of back*/
+
+[data-card-type="A2"] .front {
+    background: #f5f5f5 url('img2.jpg');
 }
 
-[data-card-type="C"] .back {
-    background: #f5f5f5 url('../img/image3.jpg');
+[data-card-type="B1"] .front {
+    background: #f5f5f5 url('img3.jpg');
 }
 
-[data-card-type="D"] .back {
-    background: #f5f5f5 url('../img/image4.jpg');
+[data-card-type="B2"] .front {
+    background: #f5f5f5 url('img4.jpg');
 }
 
-[data-card-type="E"] .back {
-    background: #f5f5f5 url('../img/image5.jpg');
+[data-card-type="C1"] .front {
+    background: #f5f5f5 url('img5.jpg');
 }
 
-[data-card-type="F"] .back {
-    background: #f5f5f5 url('../img/image6.jpg');
+[data-card-type="C2"] .front {
+    background: #f5f5f5 url('img6.jpg');
 }
 
-[data-card-type="G"] .back {
-    background: #f5f5f5 url('../img/image7.jpg');
+[data-card-type="D1"] .front {
+    background: #f5f5f5 url('img7.jpg');
 }
 
-[data-card-type="H"] .back {
-    background: #f5f5f5 url('../img/image8.jpg');
+[data-card-type="D2"] .front {
+    background: #f5f5f5 url('img8.jpg');
+}
+
+[data-card-type="E1"] .front {
+    background: #f5f5f5 url('img9.jpg');
+}
+
+[data-card-type="E2"] .front {
+    background: #f5f5f5 url('img10.jpg');
+}
+
+[data-card-type="F1"] .front {
+    background: #f5f5f5 url('img11.jpg');
+}
+
+[data-card-type="F2"] .front {
+    background: #f5f5f5 url('img12.jpg');
+}
+
+[data-card-type="G1"] .front {
+    frontground: #f5f5f5 url('img13.jpg');
+}
+
+[data-card-type="G2"] .front {
+    frontground: #f5f5f5 url('img14.jpg');
+}
+
+[data-card-type="H1"] .front {
+    frontground: #f5f5f5 url('img15.jpg');
+}
+
+[data-card-type="H2"] .front {
+    frontground: #f5f5f5 url('img16.jpg');
 }
 
 /* POPUP MESSAGE ON WINNING */
