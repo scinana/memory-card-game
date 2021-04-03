@@ -112,7 +112,7 @@ SPECIFIC SETTINGS
 .................................*/
 
 .game {
-	min-width:500px;
+	min-width:400px;
     max-width: 660px;
     margin: auto;
 }

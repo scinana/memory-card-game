@@ -82,12 +82,12 @@ $(function () {
 
                 $("[data-card-type=" + comparisonArray[0] + "1]").removeClass('flipped').addClass('solved');
 				$("[data-card-type=" + comparisonArray[1] + "2]").removeClass('flipped').addClass('solved');
-                $("[data-card-type=" + comparisonArray[0] + "1]").parent().addClass('animated pulse');
-                $("[data-card-type=" + comparisonArray[1] + "2]").parent().addClass('animated pulse');
+                //$("[data-card-type=" + comparisonArray[0] + "1]").parent().addClass('animated pulse');
+                //$("[data-card-type=" + comparisonArray[1] + "2]").parent().addClass('animated pulse');
 
                 pairs++;
 
-                if (pairs === 2) {
+                if (pairs === 8) {
                     gameOver();
                 }
             };
@@ -168,10 +168,8 @@ $(function () {
 
         $('.message-box').fadeIn(1);
 	
-
-
-    }
-
+	}
+	
 
     // shuffle function from http://stackoverflow.com/a/2450976
     function shuffle(array) {
