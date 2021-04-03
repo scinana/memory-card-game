@@ -343,3 +343,14 @@ ul.stats li {
     border: 5px solid #fbed60;
     border-radius: 20px;
 }
+/*added answer from https://stackoverflow.com/questions/66934043/how-to-remove-a-css-class-and-close-a-pop-up-message-at-the-same-time*/
+.message-box {
+    position: relative;
+}
+
+.close-popup {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}

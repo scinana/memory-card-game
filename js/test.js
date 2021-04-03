@@ -163,16 +163,13 @@ $(function () {
 
     //function for the popup message on winning
     function messageWinning() {
-
-        $(`<section class="game-over"><div class="message-box" > <h2>Yay! You have found all pairs!</h2><p>Number of attempts: ${attempts}</p><p>Time required: ${showMinutes}:${showSeconds} </p><p>Level: ${stars} </p><p><i class="fas fa-undo"></i></p></section>`).insertAfter($('.game'));
+//added div as suggested in answer https://stackoverflow.com/questions/66934043/how-to-remove-a-css-class-and-close-a-pop-up-message-at-the-same-time
+        $(`<section class="game-over"><div class="message-box" > <div class="close-popup">Close</div> <h2>Yay! You have found all pairs!</h2><p>Number of attempts: ${attempts}</p><p>Time required: ${showMinutes}:${showSeconds} </p><p>Level: ${stars} </p><p><i class="fas fa-undo"></i></p></section>`).insertAfter($('.game'));
 
         $('.message-box').fadeIn(1);				
 	
 	}
 	
-		$('.message-box').click(function(){
-			$(this).parent().removeClass('game-over');
-		});
 
     // shuffle function from http://stackoverflow.com/a/2450976
     function shuffle(array) {
@@ -235,6 +232,11 @@ $(function () {
 
 
     }
+	//added answer from https://stackoverflow.com/questions/66934043/how-to-remove-a-css-class-and-close-a-pop-up-message-at-the-same-time
+	$(document).on('click', '.close-popup', function() {
+    $('.message-box').hide().parent().removeClass('game-over');
+    createBoard();
+});
 
 
 });
