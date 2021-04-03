@@ -87,7 +87,7 @@ $(function () {
 
                 pairs++;
 
-                if (pairs === 8) {
+                if (pairs === 2) {
                     gameOver();
                 }
             };
@@ -166,10 +166,13 @@ $(function () {
 
         $(`<section class="game-over"><div class="message-box" > <h2>Yay! You have found all pairs!</h2><p>Number of attempts: ${attempts}</p><p>Time required: ${showMinutes}:${showSeconds} </p><p>Level: ${stars} </p><p><i class="fas fa-undo"></i></p></section>`).insertAfter($('.game'));
 
-        $('.message-box').fadeIn(1);
+        $('.message-box').fadeIn(1);				
 	
 	}
 	
+		$('.message-box').click(function(){
+			$(this).parent().removeClass('game-over');
+		});
 
     // shuffle function from http://stackoverflow.com/a/2450976
     function shuffle(array) {
