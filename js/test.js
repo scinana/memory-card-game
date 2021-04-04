@@ -235,7 +235,7 @@ $(function () {
 	//added answer from https://stackoverflow.com/questions/66934043/how-to-remove-a-css-class-and-close-a-pop-up-message-at-the-same-time
 	$(document).on('click', '.close-popup', function() {
     $('.message-box').hide().parent().removeClass('game-over');
-    createBoard();
+    //createBoard();
 });
 
 

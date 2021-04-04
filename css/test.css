@@ -112,8 +112,8 @@ SPECIFIC SETTINGS
 .................................*/
 
 .game {
-	min-width:400px;
-    max-width: 660px;
+	min-width:500px;
+    max-width: 700px;
     margin: auto;
 }
 
@@ -153,8 +153,7 @@ ul.stats li {
     margin: 1%;
     position: relative;
     -webkit-perspective: 800px;
-    perspective: 800px;
-	
+    perspective: 800px;	
 }
 
 .container::before {
@@ -211,7 +210,7 @@ ul.stats li {
 
 .front {
     background-color: #ffb3b3;
-
+	min-width:100%
 }
 
 /* .back {
@@ -242,68 +241,84 @@ ul.stats li {
 
 [data-card-type="A1"] .front {
     background: #f5f5f5 url('../img/img1.jpg');
+	background-size: contain;
 }
 
 /*testing adding front instead of back*/
 
 [data-card-type="A2"] .front {
     background: #f5f5f5 url('../img/img2.jpg');
+	background-size: contain;
 }
 
 [data-card-type="B1"] .front {
     background: #f5f5f5 url('../img/img3.jpg');
+	background-size: contain;
 }
 
 [data-card-type="B2"] .front {
     background: #f5f5f5 url('../img/img4.jpg');
+	background-size: contain;
 }
 
 [data-card-type="C1"] .front {
     background: #f5f5f5 url('../img/img5.jpg');
+	background-size: contain;
 }
 
 [data-card-type="C2"] .front {
     background: #f5f5f5 url('../img/img6.jpg');
+	background-size: contain;
 }
 
 [data-card-type="D1"] .front {
     background: #f5f5f5 url('../img/img7.jpg');
+	background-size: contain;
 }
 
 [data-card-type="D2"] .front {
     background: #f5f5f5 url('../img/img8.jpg');
+	background-size: contain;
 }
 
 [data-card-type="E1"] .front {
     background: #f5f5f5 url('../img/img9.jpg');
+	background-size: contain;
 }
 
 [data-card-type="E2"] .front {
     background: #f5f5f5 url('../img/img10.jpg');
+	background-size: contain;
 }
 
 [data-card-type="F1"] .front {
     background: #f5f5f5 url('../img/img11.jpg');
+	background-size: contain;
 }
 
 [data-card-type="F2"] .front {
     background: #f5f5f5 url('../img/img12.jpg');
+	background-size: contain;
 }
 
 [data-card-type="G1"] .front {
-    frontground: #f5f5f5 url('img13.jpg');
+    background: #f5f5f5 url('../img/img13.jpg');
+	background-size: contain;
 }
 
 [data-card-type="G2"] .front {
-    frontground: #f5f5f5 url('img14.jpg');
+    background: #f5f5f5 url('../img/img14.jpg');
+	background-size: contain;
 }
 
 [data-card-type="H1"] .front {
-    frontground: #f5f5f5 url('img15.jpg');
+    background: #f5f5f5 url('../img/img15.jpg');
+	background-size: contain;
 }
 
 [data-card-type="H2"] .front {
-    frontground: #f5f5f5 url('img16.jpg');
+    background: #f5f5f5 url('../img/img16.jpg');
+	background-size: contain;
 }
 
 /* POPUP MESSAGE ON WINNING */
